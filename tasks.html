@@ -37,6 +37,9 @@
         .skipped {
             color: grey;
         }
+        .hidden {
+            display: none;
+        }
     </style>
     <style>
     body {
@@ -65,11 +68,13 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <h1>My tasklist</h1>
-    <!--<button onclick="clearData()">Clear Data and Restart</button>
+   
+   <div id="hidden-section" class="hidden">
+   <button onclick="clearData()">Clear Data and Restart</button>
     <div id="toolkit-display">
         <p>Code: <span id="generated-code"></span></p>
-    </div>-->
-
+    </div>
+	</div>
     <table id="tasks-table">
         <thead>
             <tr>

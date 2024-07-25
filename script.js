@@ -100,10 +100,7 @@ window.loadCode = function() {
     }
 }
 
-window.clearData = function() {
-    localStorage.clear();
-    window.location.href = 'index.html';
-}
+
 
 function loadRecordData(code) {
     document.getElementById('task1-status').textContent = localStorage.getItem('task1-status');
